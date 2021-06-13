@@ -29,7 +29,7 @@ Using the data we have gathered, we hope to answer the following questions:
 
 1. How does disposable income on a macroeconomic level affect future sales at our stores?
 
-2. How does inflation affect sales on a macroeconomic level.
+2. How does inflation affect sales on a macroeconomic level?
 
 ## Technologies and Tools
 The following technologies and tools are used in this project.
