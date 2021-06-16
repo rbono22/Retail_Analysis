@@ -10,7 +10,7 @@ University of California, Berkeley Extension Data Analytics Bootcamp Final Proje
 |----------------------	|---------------------   | -------------                                                    |
 | [Rob Bonovich](https://github.com/rbobo22)|  Project Manager and Dashboard Lead    	 |  Manage the Project, Presentation, Dashboard, Technology, and GitHub Repo   |
 | [Nuphar Ezra](https://github.com/nupharezra)    	|  Machine Learning Lead         |  Manage the Machine Learning Model and Design                             |
-| [Michael Mishkanian](https://github.com/Mishkanian)       	|  Dashboard Lead |  Manage the Database and ETL Process 	                |
+| [Michael Mishkanian](https://github.com/Mishkanian)       	|  Database Lead |  Manage the Database and ETL Process 	                |
 
 ---
 Although specific roles are assigned, all members collaborate and work together on each part of the project. 
