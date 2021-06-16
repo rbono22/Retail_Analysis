@@ -1,7 +1,7 @@
 Features
 -
 Store PK int FK >- Sales_Data.Store
-Date date FK >- Sales_Data.Date
+Date date FK >- DSPI_data.Date
 Temperature int
 Fuel_Price  int
 MarkDown1  int
@@ -27,4 +27,12 @@ Store PK int FK >- Features.Store
 Type varchar
 Size int
 
+DSPI_data
+-
+Date date FK >- DSPI_ratio.Date
+DSPI int
 
+DSPI_ratio
+-
+Date date FK >- Sales_Data.Date
+DSPI_ratio int
