@@ -3,56 +3,57 @@
 -- Data must be imported in the exact table sequence below as well.
 
 CREATE TABLE "dspi_data" (
-    "Date" date   NOT NULL,
-    "DSPI" numeric   NOT NULL,
-    PRIMARY KEY("Date")
+    "date" date   NOT NULL,
+    "dspi" numeric   NOT NULL,
+    PRIMARY KEY("date")
 );
 
 CREATE TABLE "inflation" (
-    "Date" date   NOT NULL,
+    "date" date   NOT NULL,
     "inflation" numeric   NOT NULL,
-    FOREIGN KEY("Date") REFERENCES "dspi_data" ("Date")
+    FOREIGN KEY("date") REFERENCES "dspi_data" ("date")
 );
 
 CREATE TABLE "stores_data" (
-    "Store" int   NOT NULL,
-    "Type" varchar   NOT NULL,
-    "Size" int   NOT NULL,
-    PRIMARY KEY ("Store")
+    "store" int   NOT NULL,
+    "type" varchar   NOT NULL,
+    "size" int   NOT NULL,
+    PRIMARY KEY ("store")
 );
 
 CREATE TABLE "features" (
-    "Store" int   NOT NULL,
-    "Date" date   NOT NULL,
-    "Temperature" numeric   NOT NULL,
-    "Fuel_Price" numeric   NOT NULL,
-    "CPI" numeric   NOT NULL,
-    "Unemployment" numeric   NOT NULL,
-    "IsHoliday" bool   NOT NULL,
-    FOREIGN KEY("Store") REFERENCES "stores_data" ("Store")
+    "store" int   NOT NULL,
+    "date" date   NOT NULL,
+    "temperature" numeric   NOT NULL,
+    "fuel_price" numeric   NOT NULL,
+    "cpi" numeric   NOT NULL,
+    "unemployment" numeric   NOT NULL,
+    "isholiday" bool   NOT NULL,
+    FOREIGN KEY("store") REFERENCES "stores_data" ("store")
 );
 
 CREATE TABLE "sales_data" (
-    "Store" int   NOT NULL,
-    "Dept" int   NOT NULL,
-    "Date" date   NOT NULL,
-    "Weekly_Sales" numeric   NOT NULL,
-    "IsHoliday" bool   NOT NULL,
-    FOREIGN KEY("Store") REFERENCES "stores_data" ("Store")
+    "store" int   NOT NULL,
+    "dept" int   NOT NULL,
+    "date" date   NOT NULL,
+    "weekly_sales" numeric   NOT NULL,
+    "isholiday" bool   NOT NULL,
+    FOREIGN KEY("store") REFERENCES "stores_data" ("store")
 );
 
 -- To drop all tables and start over, use the queries below
--- DROP SCHEMA public CASCADE;
--- CREATE SCHEMA public;
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
 
 -- To drop a single table, use the query below
--- DROP TABLE sales_data;
--- DROP TABLE stores_data;
--- DROP TABLE features;
+DROP TABLE sales_data;
+DROP TABLE stores_data;
+DROP TABLE features;
+DROP TABLE dspi_data;
 
 -- Check to make sure all of the tables generated correctly
 SELECT * FROM dspi_data;
-SELECT * FROM dspi_ratio;
+SELECT * FROM inflation;
 SELECT * FROM features;
 SELECT * FROM sales_data;
 SELECT * FROM stores_data; 
