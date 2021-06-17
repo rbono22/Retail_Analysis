@@ -8,9 +8,9 @@ CREATE TABLE "dspi_data" (
     PRIMARY KEY("Date")
 );
 
-CREATE TABLE "dspi_ratio" (
+CREATE TABLE "inflation" (
     "Date" date   NOT NULL,
-    "DSPI_ratio" numeric   NOT NULL,
+    "inflation" numeric   NOT NULL,
     FOREIGN KEY("Date") REFERENCES "dspi_data" ("Date")
 );
 
@@ -26,11 +26,6 @@ CREATE TABLE "features" (
     "Date" date   NOT NULL,
     "Temperature" numeric   NOT NULL,
     "Fuel_Price" numeric   NOT NULL,
-    "MarkDown1" numeric   NOT NULL,
-    "MarkDown2" numeric   NOT NULL,
-    "MarkDown3" numeric   NOT NULL,
-    "MarkDown4" numeric   NOT NULL,
-    "MarkDown5" numeric   NOT NULL,
     "CPI" numeric   NOT NULL,
     "Unemployment" numeric   NOT NULL,
     "IsHoliday" bool   NOT NULL,
@@ -60,4 +55,4 @@ SELECT * FROM dspi_data;
 SELECT * FROM dspi_ratio;
 SELECT * FROM features;
 SELECT * FROM sales_data;
-SELECT * FROM stores_data;
+SELECT * FROM stores_data; 
