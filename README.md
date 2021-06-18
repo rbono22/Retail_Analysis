@@ -55,14 +55,21 @@ The following technologies and tools are used in this project.
 
 ## Data Sources
 
-[Kaggle: Retail Data Analytics - Features](https://www.kaggle.com/manjeetsingh/retaildataset?select=Features+data+set.csv)
+[Kaggle: Retail Data Analytics - Features](https://www.kaggle.com/manjeetsingh/retaildataset?select=Features+data+set.csv)  
 Description: The Retail Data Analytics dataset contains historical sales data of 45 Walmarts located in different regions of the United States. Anonymized information is provided about the type and size of store.
 
-[Kaggle: Retail Data Analytics - Stores](https://www.kaggle.com/manjeetsingh/retaildataset?select=Features+data+set.csv)
+[Kaggle: Retail Data Analytics - Stores](https://www.kaggle.com/manjeetsingh/retaildataset?select=Features+data+set.csv)  
 Description: The Stores sheet contains data related to Walmart stores, department number, and regional activity.
 
-[Kaggle: Retail Data Analytics - Sales](https://www.kaggle.com/manjeetsingh/retaildataset?select=Features+data+set.csv)
+[Kaggle: Retail Data Analytics - Sales](https://www.kaggle.com/manjeetsingh/retaildataset?select=Features+data+set.csv)  
 Description: The Sales sheet contains data on Weekly Sales by each Walmart store, department number, and date.
+
+[FRED Economic Data: CPI](https://fred.stlouisfed.org)  
+Description: Federal Reserve Economic Data (FRED) is an online database consisting of hundreds of thousands of economic time series graphs. The graphs can be downloaded as CSV files. The data is created and maintained by the Research Department of the Federal Reserve Bank of St. Louis. This particular dataset contains information on CPI by date. This data is used to analyze CPI by matching to the dates of the Kaggle dataset.
+
+[FRED Economic Data: Inflation](https://fred.stlouisfed.org)  
+Description: This FRED dataset contains information on Inflation levels by date. Entries are measured every year.
+
 
 ## ETL Process
 
