@@ -77,9 +77,11 @@ After gathering the data from Kaggle, we began to transform and clean the datase
 
 ## Database
 
-The cleaned datasets are loaded to tables in pgAdmin according to the Entity Relationship Diagram (ERD) we created. Our ERD generation tool of choice is [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/). A full left join is performed on the date column using the 'Features' table and each of the other tables. After joining all of the tables, the final table is exported as a new CSV file.
+The cleaned datasets are loaded to tables in pgAdmin according to the Entity Relationship Diagram (ERD) we created. Our ERD generation tool of choice is [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/). A full left join is performed on the date column using the 'Features' table and each of the other tables. After [joining all of the tables](https://github.com/rbono22/Retail_Analysis/blob/main/Database/Queries/queries.sql), the final table is exported as a new CSV file named [final_cleaned_dataset.csv](https://github.com/rbono22/Retail_Analysis/blob/main/Resources/cleaned_datasets/final_cleaned_dataset.csv).
 
 ![entity_relationship_diagram](https://github.com/rbono22/Retail_Analysis/blob/main/README_images/retail_erd.png)
+
+Using the SQLAlchemy import create_engine and psycopg2, a connection to the PostgreSQL database is successfully created. To view the database connection code, please [click here](https://github.com/rbono22/Retail_Analysis/blob/main/Database/SQLAlchemy_connection/SQLAlchemy_connection.ipynb).
 
 ## Machine Learning
 
