@@ -88,3 +88,17 @@ Using the SQLAlchemy import create_engine and psycopg2, a connection to the Post
 #### Provisional Model
 
 The creation of our provisional Machine Learning model began by deciding on a method to use. After deciding to use Logistic Regressions, the model is set up to take in training data and successfully creates output labels for the inputs. Later in this project, we will test and compare the performance of other techniques to create a more optimized model.
+
+#### Updated Model
+
+After multiple trials, it is determined that Logistic Regressions are not a good fit for the purposes of this project. For the updated machine learning model, we have decided to use a Random Forest Classifier. We have chosen to use this model because it is robust to outliers, works well on non-linear data, and limits the risk of overfitting. It should be recognized that a limitation of Random Forest Classifiers is the slow training speed. The data is split into test and training by a ratio of 33:67. For the feature, we chose Month/Day. For the target, we selected weekly sales.
+
+![updated_model_grpah]()
+
+## Dashboard and Presentation
+
+[Click here](https://docs.google.com/presentation/d/1yqK3tsS8C_pgRdf4QdgVv8xyIa2qt9MuZKzH80ndMBY/edit#slide=id.ge1d9ef6bbe_0_151) to view our presentation on Google Slides.
+
+Our project's dashboard follows the storyboarded outline seen below. The tools used to create this dashboard include JavaScript, HTML, and Tableau. The embedded Tableau Story on our dashboard adds an interactive and informative element to our final presentation. We have chosen to use Tableau because of it's ease of use for readers and intuitive interface.
+
+![dash_storyboard](https://github.com/rbono22/Retail_Analysis/blob/main/README_images/dash_storyboard.png)
