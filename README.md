@@ -74,7 +74,14 @@ The cleaned datasets are loaded to tables in pgAdmin according to the Entity Rel
 ![entity_relationship_diagram]()
 ​
 ## Machine Learning
-​
+
 #### Provisional Model
-​
-The creation of our provisional Machine Learning model began by deciding on a method to use. After deciding to use Logistic Regressions, the model is set up to take in training data and successfully creates output labels for the inputs. Later in this project, we will test and compare the performance of other techniques to create a more optimized model.
+
+Our provisional model used to identify trends within the data was a Linear Regression model, where collected the mean weekly sales across the years for each store independently. See graph below. As you can see, there are two large spikes in sales towards the end of the year across all stores, 
+ Later in this project, we will test and compare the performance of other techniques to create a more optimized model.
+
+#### Updated Model
+
+After multiple trials, we have decided to use a Random Forest Regression Model. We have chosen to use this model because it is robust to outliers, works well on non-linear data, and estimates of what variables that are important in the classification. It should be recognized that a limitation of Random Forest Regressors is the tend to overfit for some datasets with noisy classification/regression tasks. The data is split into test and training by a ratio of 30:70. For the features, we chose to use the new features from the FRED data and as our target we selected weekly sales.
+
+![Month_day_vs_Weekly_sales_per_year.png](Month_day_vs_Weekly_sales_per_year.png)
