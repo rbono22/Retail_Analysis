@@ -77,4 +77,4 @@ The cleaned datasets are loaded to tables in pgAdmin according to the Entity Rel
 ​
 #### Provisional Model
 ​
-The creation of our provisional Machine Learning model began by deciding on a method to use. After deciding to use Logistic Regressions, the model is set up to take in training data and successfully creates output labels for the inputs. Later in this project, we will test and compare the performance of other techniques to create a more optimized model.
+The creation of our provisional Machine Learning model began by deciding on a method to use. After deciding to use Logistic Regressions, the model is set up to take in training data and successfully creates output labels for the inputs. Later in this project, we will test and compare the performance of other techniques to create a more optimized model. 
