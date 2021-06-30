@@ -15,8 +15,6 @@ University of California, Berkeley Extension Data Analytics Bootcamp Final Proje
 ---
 Although specific roles are assigned, all members collaborate and work together on each part of the project. 
 
-**Communication Protocols:** Team members communicate using Slack messaging and Zoom video calls.
-
 ---
 
 ## Project Topic
@@ -97,9 +95,9 @@ After multiple trials, we have decided to use a Random Forest Regression Model. 
 
 ## Dashboard and Presentation
 
-[Click here](https://docs.google.com/presentation/d/1yqK3tsS8C_pgRdf4QdgVv8xyIa2qt9MuZKzH80ndMBY/edit#slide=id.ge1d9ef6bbe_0_151) to view our presentation on Google Slides.
+[Click here](https://docs.google.com/presentation/d/1yqK3tsS8C_pgRdf4QdgVv8xyIa2qt9MuZKzH80ndMBY/edit#slide=id.p) to view our presentation on Google Slides.
 
-Our project's dashboard follows the storyboarded outline seen below. The tools used to create this dashboard include JavaScript, HTML, and Tableau. The embedded Tableau Story on our dashboard adds an interactive and informative element to our final presentation. We have chosen to use Tableau because of it's ease of use for readers and intuitive interface.
+Our project's dashboard follows the storyboarded outline seen below. The tools used to create this dashboard include JavaScript, HTML, and Tableau. The embedded Tableau Story on our dashboard adds an interactive and informative element to our final presentation. We have chosen to use Tableau because of its ease of use for readers and intuitive interface.
 
 ![dash_storyboard](https://github.com/rbono22/Retail_Analysis/blob/main/README_images/dash_storyboard.png)
 
