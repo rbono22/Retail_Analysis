@@ -89,9 +89,11 @@ Our provisional model used to identify trends within the data was a Linear Regre
 
 ![Month_day_vs_Weekly_sales_per_year.png](Month_day_vs_Weekly_sales_per_year.png)
 
-#### Updated Model
+## Model Analysis
+After completing the model, we noticed a few interesting correlations within the data. First we notice that our data is bimodal - meaning there are two maximum points separated by a relative low point. The graph below shows the our dataset compared to our CPI for each store. As you can see there are two peaks - one at -.7 and another at ~1.5. These peaks represent that there are two times in which the average price of goods increase over time. We can also see this in a scatter plot displayed below. 
 
-After multiple trials, we have decided to use a Random Forest Regression Model. We have chosen to use this model because it is robust to outliers, works well on non-linear data, and estimates of what variables that are important in the classification. It should be recognized that a limitation of Random Forest Regressors is the tend to overfit for some datasets with noisy classification/regression tasks. The data is split into test and training by a ratio of 30:70. For the features, we chose to use the new features from the FRED data and as our target we selected weekly sales.
+In relation to inflation and CPI, we were unable to identify any linear correlation between sales and our features but we did notice that those features have are heavily weighted. Using the feature_importances_
+technique we can identify which features have the greatest weight to our target. 
 
 ## Dashboard and Presentation
 
