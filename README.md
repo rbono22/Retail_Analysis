@@ -112,6 +112,6 @@ In relation to inflation and CPI, we were unable to identify any linear correlat
 
 Our project's dashboard follows the storyboarded outline seen below. The tools used to create this dashboard include JavaScript, HTML, and Tableau. The embedded Tableau Story on our dashboard adds an interactive and informative element to our final presentation. We have chosen to use Tableau because of its ease of use for readers and intuitive interface.
 
-![dash_storyboard](https://github.com/rbono22/Retail_Analysis/blob/main/README_images/dash_storyboard.png)
+![dash_storyboard](https://github.com/rbono22/Retail_Analysis/blob/main/README_images/StoryBoard_Retail_Analysis.png)
 
 
