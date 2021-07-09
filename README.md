@@ -85,13 +85,15 @@ Using the SQLAlchemy import create_engine and psycopg2, a connection to the Post
 
 #### Provisional Model
 
-Our provisional model used to identify trends within the data was a Linear Regression model, where collected the mean weekly sales across the years for each store independently. See graph below. As you can see, there are two large spikes in sales towards the end of the year across all stores, indicating a huge spike in sales come holiday season. There are also smaller spikes indicating increase in sales due to other promotional holidays such as the Super Bowl, back to school, summertime season, etc. Later in this project, we will test and compare the performance of other techniques to create a more optimized model.
+Our provisional model used to identify trends within the data was a AdaBoost Model, where collected the mean weekly sales across the years for each store independently. See graph below. As you can see, there are two large spikes in sales towards the end of the year across all stores, indicating a huge spike in sales come holiday season. There are also smaller spikes indicating increase in sales due to other promotional holidays such as the Super Bowl, back to school, summertime season, etc. Later in this project, we will test and compare the performance of other techniques to create a more optimized model.
 
 ![Month_day_vs_Weekly_sales_per_year.png](Month_day_vs_Weekly_sales_per_year.png)
 
 #### Updated Model
 
-After multiple trials, we have decided to use a Random Forest Regression Model. We have chosen to use this model because it is robust to outliers, works well on non-linear data, and estimates of what variables that are important in the regression. It should be recognized that a limitation of Random Forest Regressors is the tend to overfit for some datasets with noisy classification/regression tasks. The data is split into test and training by a ratio of 30:70. For the features, we chose to use the features provided from the FRED dataset which includes CPI (Consumer Price Index), disposable income, unemployment rate, inflation, temperature, and fuel price. Our target variable is monthly sales data calculated by aggregating the weekly sales data and standardizing it. Our finalized model shows an accuracy score of 83.8%. 
+After multiple trials, we have decided to use a Random Forest Regression Model. We have chosen to use this model because it is robust to outliers, works well on non-linear data, and estimates of what variables that are important in the regression. It should be recognized that a limitation of Random Forest Regressors is the tend to overfit for some datasets with noisy classification/regression tasks. The data is split into test and training by a ratio of 30:70. For the features, we chose to use the features provided from the FRED dataset which includes CPI (Consumer Price Index), disposable income, unemployment rate, inflation, temperature, and fuel price. Our target variable is monthly sales data calculated by aggregating the weekly sales data and standardizing it. Our finalized model shows an accuracy score of 83.9%. 
+
+![store_41.png](store_41.png)
 
 ## Model Analysis
 After completing the model, we noticed a few interesting correlations within the data. First we notice that our data is bimodal - meaning there are two maximum points separated by a relative low point. The graph below shows the our dataset compared to our CPI for each store. As you can see there are two peaks - one at -.7 and another at ~1.5. These peaks represent that there are two times in which the average price of goods increase over time. We can also see this in a scatter plot displayed below. 
@@ -100,11 +102,9 @@ After completing the model, we noticed a few interesting correlations within the
 
 ![scatter_plot.png](scatter_plot.png)
 
-
 In relation to inflation and CPI, we were unable to identify any linear correlation between sales and our features but we did notice that those features have are heavily weighted. Using the *feature_importances_* technique we can identify which features have the greatest weight to our target. Looking at the pie chart below, we see that CPI has the greatest weight on our target followed by disposible income.   
 
 ![pie_chart.png](pie_chart.png)
-
 
 ## Dashboard and Presentation
 
